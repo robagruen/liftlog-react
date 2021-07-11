@@ -6,8 +6,9 @@ import {
   Link
 } from "react-router-dom";
 
-import Exercises from "./../Exercises/Exercises";
 import Dashboard from "./../Dashboard/Dashboard";
+import Exercises from "./../Exercises/Exercises";
+import Settings from "./../Settings/Settings";
 
 export default function App() {
   return (
@@ -21,12 +22,18 @@ export default function App() {
             <li>
               <Link to="/exercises">Exercises</Link>
             </li>
+            <li>
+              <Link to="/settings">Settings</Link>
+            </li>
           </ul>
         </nav>
 
         <Switch>
           <Route path="/exercises">
             <Exercises />
+          </Route>
+          <Route path="/settings">
+            <Settings />
           </Route>
           <Route path="/">
             <Dashboard />
