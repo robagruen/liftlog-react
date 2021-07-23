@@ -12,9 +12,15 @@ code {
 }
 
 html {
-	background-color: $color;
-	color: orange;
+	background-color: $color-darkgray;
+	color: $color-white;
 	a {
-		color: $color2;
+		color: $color-fuchsia;
+		&:hover {
+			color: $color-deepfuchsia;
+		}
+		&:disabled {
+			color: $color-disabledfuchsia;
+		}
 	}
 }
